@@ -1,0 +1,207 @@
+
+.App{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  // background:#1f1f1f;
+  background:#141414;
+  color: #fff;
+}
+.clicked{
+  background:#00000052;
+}
+
+.editorContainer,.chatContainer{
+flex: 1;
+}
+
+.Users{
+  border: 1px;
+  flex: 1;
+  border-right-style: solid;
+  height: 100%;  
+  max-width: 50%;
+}
+.chatbox{
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .chatwindow{
+    height: 50%;
+    width: 90%;
+    background: #1f1f1f;;
+    border-radius: 8px;
+    overflow-y: auto;
+  }
+ 
+    .message_input{
+      margin-top: 10%;
+      height: 15%;
+      width: 90%;
+      box-sizing: border-box;
+      border-radius: 8px;
+      background: #1f1f1f;
+      border: none;
+      color: white;
+      align-items: center;
+      font: normal 14px verdana;
+      line-height: 25px;
+      word-wrap: break-word;
+      padding:2%;
+      resize: none;
+
+    }
+  
+}
+.thread{
+  display: flex;
+}
+.thread_bubble{
+  border-radius: 7px;
+  padding:5px 10px;
+  background: #404040 ;
+  margin: 10px;
+  position: relative;
+  max-width: 70%;
+  .thread_userName{
+    padding-left: 5px;
+    color: yellow;
+  }
+  .thread_text{
+    padding-left: 12px;
+    color: white;
+    margin-bottom: 2px;
+    margin-right: 22px;
+  }
+}
+.thread_user{
+  justify-content: flex-end;
+}
+
+.user_container{
+  display: flex;
+  height: 100%;
+  flex-grow:1;
+  flex-direction: column;
+  position: relative;
+
+  .add_new_user{
+    margin-top: auto;
+    padding :10px 10px;
+    .add_new_user_text{
+      color: #000000bb;
+      margin-top :10px;
+      padding:10px;
+    }
+  }
+}
+.tabPanel{
+  padding: 0 !important;
+  width: 100%;
+  height: 100%;
+  background-color: #201b1b;
+}
+
+.notetextarea {
+  // background: url(http://i.stack.imgur.com/ynxjD.png) repeat-y;
+  height: 100%;
+  width: 100%;
+  font: normal 14px verdana;
+  line-height: 25px;
+  box-sizing: border-box;
+  color: white;
+  background-color: #1f1f1f;
+  resize: none;
+ }
+ .appbar{
+  background-color : #141414 !important;
+  color: white;
+  width: 75% !important;
+ }
+ .para,.scroller{
+   overflow-x: auto !important;
+ }
+
+ .newTab{
+  position: sticky !important;
+  right: 0 !important;
+  background: #141414 !important;
+  opacity: 1 !important;
+  z-index: 10;
+  border-left: 1px solid whitesmoke !important;
+  width: 100px;
+  min-width: 100px !important;
+ }
+
+ .tabButtons{
+   width: 100px;
+   min-width: 100px !important;
+   border-left: 1px solid whitesmoke !important;
+ }
+
+.applyButton{
+  position: absolute;
+  right: 5%;
+  opacity: 1 !important;
+  background: #141414 !important;
+  color:whitesmoke;
+  padding :5px;
+  margin :5px;
+  border: 1px solid white;
+  border-radius: 4px;
+  text-align: center;
+}
+.active{
+background:#66d68d !important;
+}
+.deleteIcon{
+  position: absolute;
+  right: 0;
+  opacity: 1 !important;
+  background: #141414 !important;
+  color:whitesmoke;
+  padding :5px;
+  margin :5px;
+  border: 1px solid white;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
